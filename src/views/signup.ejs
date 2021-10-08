@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script async src="js/linkboot.js"></script>
+   
+</head>
+<body >
+ 
+    <div id="for">
+  <div class="contain" >
+    <form action="/" onsubmit="return validate()">
+        
+      <h2>Register</h2>
+      <h5 id=empty>* Invalid Field</h5>
+      <br>
+      <br>
+      <input placeholder="Enter Username" type="text" id="username" >
+      <br><br><br>
+      <input placeholder="Enter email" type="text" id="email"  onkeyup="check()">
+      
+      <br><br><br>
+      <div class="field">
+      <input placeholder="Enter Password" onkeyup="trigger()"  type="password" id="password">
+      </div>
+      
+      <div class="text"></div>
+      <br>
+      <br>
+      <input placeholder="Confirm Password" type="Password" id="confirmpassword" onkeyup="passwordmatch()">
+      
+      <br><br>
+      <br>
+      <input placeholder="Enter Phonenumber" type="text" id="phonenumber" onkeyup="phonecheck()"><br>
+     
+      <br><br>
+      <button  class="btn btn-success">Register</button>
+    </div>
+    </form>
+  </div>
+
+ 
+  
+    
+   
+</body>
+</html>
